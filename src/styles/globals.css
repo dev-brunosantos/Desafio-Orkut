@@ -25,3 +25,7 @@ body {
   background: #D9E6F7;
   font-family: var(--font-inter);
 }
+
+.link-ativo {
+  color: #ED2590;
+}
