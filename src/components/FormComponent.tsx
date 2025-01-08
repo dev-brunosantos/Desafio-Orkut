@@ -8,7 +8,7 @@ import PsOrkut from '../../public/img/svg/ps_orkut.svg';
 
 export const FormComponent = () => {
     return (
-        <div className="w-[384px] h-[596px] flex flex-col items-center justify-evenly bg-dark40 rounded-2xl">
+        <div className="w-[384px] h-[100%] max-h-[596px] flex flex-col items-center justify-evenly bg-dark40 rounded-2xl">
             <div className="w-[178px] h-[78px] flex flex-col items-center justify-evenly">
                 <Image src={PsOrkut} alt="" />
 
@@ -31,7 +31,7 @@ export const FormComponent = () => {
                 <input type="checkbox" name="" id="lembrarSenha" 
                     className="appearance-none w-4 h-4 border rounded cursor-pointer relative bg-dark30 checked:bg-brandColor " 
                 />
-                <label htmlFor="lembrarSenha" className="text-brandColor text-[12px] font-normal ml-2">Lembrar minha senha</label>
+                <label htmlFor="lembrarSenha" className="text-brandColor text-[12px] font-normal ml-2 cursor-pointer">Lembrar minha senha</label>
             </div>
 
             <div>
