@@ -8,22 +8,21 @@ import ImgLogin from '../../public/img/users/img_login.png'
 
 export default function App() {
   return (
-    <div className="w-[1920px] flex flex-col justify-center">
-      <header className="w-[100%]  bg-dark40 m-auto">
+    <div>
+      <header className="w-[100%] flex items-center justify-center bg-dark40 fixed top-0">
         <MenuComponent />
       </header>
 
-      <main className="w-[100%] m-auto flex items-center justify-center">
-        <div className="w-[1240px] h-[100%] flex items-center justify-between border-brandColor border">
-          <Image src={ImgLogin} alt="" />
-
+      <main className="w-[100%] h-[100vh] flex items-center justify-center ">
+        <div className="w-auto h-[75%] gap-8 flex items-center justify-center">
+          <Image src={ImgLogin} alt="" className="max-w-[700px] h-[100%] max-h-[598px]" />
           <FormComponent />
         </div>
       </main>
 
-      <footer className="w-[100%] h-12  bg-dark40 m-auto">
-        <div className="w-[25%] h-[100%] m-auto flex items-center justify-center">
-          <p className="text-brandColor font-normal text-[14px]">
+      <footer className="w-[100%] h-12 bg-dark40 flex items-center justify-center fixed bottom-0">
+        <div className="w-[25%] flex items-center justify-center">
+          <p className="text-[14px] font-normal text-brandColor">
             Todos os direitos reservados
           </p>
         </div>
