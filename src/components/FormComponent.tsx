@@ -45,6 +45,10 @@ export const FormComponent = () => {
                     btnPadrao={false}
                 />
             </div>
+
+            <div className="w-[336px] flex items-center justify-center">
+                <a href="" className="text-brandColor">Esqueci a minha senha</a>
+            </div>
         </div>
     )
 }
