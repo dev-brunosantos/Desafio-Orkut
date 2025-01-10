@@ -36,7 +36,7 @@ body {
   justify-content: space-evenly;
   gap: 14px; 
   position: absolute; 
-  top: 97%;
+  top: 100%;
   right: 0; 
   border: 1px solid #B4AEAE;
   border-top-style: none;
@@ -44,6 +44,7 @@ body {
   transition: 0.3s;
   overflow: hidden;
   background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px #B4AEAE;
 }
 
 .fechar-menu {
