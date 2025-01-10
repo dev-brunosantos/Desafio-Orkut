@@ -1,11 +1,4 @@
-// import Image from "next/image"
 import { ReactNode } from "react"
-
-// import ImgFrase from '../../../public/frase-efeito.png'
-// import Stars from '../../../public/img/svg/star.svg'
-// import Smiley from '../../../public/img/svg/smiley.svg'
-// import Like from '../../../public/img/svg/like.svg'
-// import Heart from '../../../public/img/svg/heart.svg'
 
 interface CardProfileProps {
     txt: string;
