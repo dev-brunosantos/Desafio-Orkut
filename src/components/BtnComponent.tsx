@@ -14,12 +14,16 @@ export const BtnComponent = ({ titulo, btnPadrao, btnBranco, ...rest }: BtnProps
     if (btnPadrao) {
         return (
             <div className="w-[336px] h-[52px] my-2 rounded-lg gap-2 relative flex items-center justify-center bg-brandColor overflow-hidden" >
-                <button
+                {/* <button
                     {...rest}
-                    className="w-[100%] h-[100%] bg-transparent px-4 text-[16px] text-dark40 font-semibold"
+                    className="w-[100%] h-[100%] bg-transparent px-4 text-[16px] text-dark40 font-semibold "
                 >
-                    <Link href='home' >{titulo}</Link>
-                </button>
+                    <Link href='home' className="w-[100%] h-[100%] z-100" >{titulo}</Link>
+                </button> */}
+
+                <Link href='home' className="w-[100%] h-[100%] bg-transparent px-4 text-[16px] text-dark40 font-semibold flex items-center justify-center " >
+                    {titulo}
+                </Link>
             </div >
         )
     }
