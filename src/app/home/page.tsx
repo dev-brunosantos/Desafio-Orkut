@@ -1,11 +1,11 @@
 import { MenuPrincipal } from "@/src/components/Menus/MenuPrincipal";
-import { PerfilComponent } from "@/src/components/profile/PerfilComponent";
 import { ContainerUsers } from "@/src/components/Conteiners/ContainerUsers";
 import { ContainerComunity } from "@/src/components/Conteiners/ContainerComunity";
 import { ContentProfile } from "@/src/components/profile/ContentProfile";
 import { profileInfor } from "@/src/tools/profileInfor";
 import { ContainerMusicsAndMovies } from "@/src/components/profile/ContainerMusicsAndMovies";
 import { movies, musics } from "@/src/tools/musics_moviesInfor";
+import { PerfilComponent } from "@/src/components/profile/PerfilComponent";
 
 export default function Home() {
     return (
@@ -24,10 +24,10 @@ export default function Home() {
                         <div className="w-[80%] max-h-auto min-h-[596px] flex flex-col gap-6 ">
                             {
                                 profileInfor.map(obj => (
-                                    <p key={obj.Chave} className="text-[14px] text-[#B4AEAE] font-normal">
+                                    <p key={obj.Chave} className="text-[14px] text-dark20 font-normal">
                                         {obj.Chave}
                                         :
-                                        <span className="text-[#4B4B4B] ">
+                                        <span className="text-dark10 ">
                                             {obj.Valor}
                                         </span>
                                     </p>
@@ -37,7 +37,7 @@ export default function Home() {
                             <ContainerMusicsAndMovies category="Musicas">
                                 {
                                     musics.map(item => (
-                                        <span key={item.music} className="text-[#4B4B4B] border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
+                                        <span key={item.music} className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
                                             {item.music}
                                         </span>
                                     ))
@@ -47,7 +47,7 @@ export default function Home() {
                             <ContainerMusicsAndMovies category="Musicas">
                                 {
                                     movies.map(item => (
-                                        <span key={item.movie} className="text-[#4B4B4B] border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
+                                        <span key={item.movie} className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
                                             {item.movie}
                                         </span>
                                     ))

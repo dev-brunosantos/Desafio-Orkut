@@ -8,7 +8,7 @@ interface Props {
 export const ContainerMusicsAndMovies = ({ category, children }: Props) => {
     return (
         <div className="flex items-center">
-            <p className="text-[14px] text-[#B4AEAE] font-normal">
+            <p className="text-[14px] text-dark20 font-normal">
                 {category}:
 
                 {children}

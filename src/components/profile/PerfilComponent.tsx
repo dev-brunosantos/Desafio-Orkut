@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import Perfil from '../../public/img/users/user-image.png'
+import Perfil from '../../../public/img/users/user-image.png'
 import { BtnComponent } from "../BtnComponent"
 
 export const PerfilComponent = () => {
@@ -12,10 +12,10 @@ export const PerfilComponent = () => {
                 </div>
 
                 <div className="w-[95px] h-[56px] flex flex-col items-center justify-center">
-                    <p className="font-bold text-[20px] text-[#4b4b4b]">
+                    <p className="font-bold text-[20px] text-dark10">
                         Iuri Silva
                     </p>
-                    <p className="text-[14px] text-[#4b4b4b] font-normal">
+                    <p className="text-[14px] text-dark10 font-normal">
                         Solteiro, Brasil
                     </p>
                 </div>

@@ -15,7 +15,7 @@ export const ContentProfile = () => {
             <div className="[346px] h-[46px] flex">
                 <CardProfile txt="Fã">
                     <Image src={Stars} alt="" className="w-[18px] h-[18px]"/>
-                    <p className="text-[14px] text-[#4B4B4B] font-normal">
+                    <p className="text-[14px] text-dark10 font-normal">
                         85
                     </p>
                 </CardProfile>
