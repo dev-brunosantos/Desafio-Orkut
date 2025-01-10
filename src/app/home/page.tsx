@@ -35,8 +35,9 @@ export default function Home() {
                                 <Image src={ImgFrase} alt="" />
                             </div>
 
-                            <div className="[346px] h-[46px] flex justify-start">
-                                <div className="flex flex-col justify-between mr-10">
+                            {/* <div className="[346px] h-[46px] flex justify-start"> */}
+                            <div className="[346px] h-[46px] inline-flex">
+                                {/* <div className="flex flex-col justify-between mr-10">
                                     <p className="text-[16px] font-normal text-[#4b4b4b]">
                                         Fã
                                     </p>
@@ -46,9 +47,16 @@ export default function Home() {
                                             85
                                         </p>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="flex flex-col justify-between mr-10">
+                                <CardProfile txt="Fã">
+                                    <Image src={Stars} alt="" />
+                                    <p className="text-[16px] text-[#4B4B4B] font-normal">
+                                        85
+                                    </p>
+                                </CardProfile>
+
+                                {/* <div className="flex flex-col justify-between mr-10">
                                     <p className="text-[16px] font-normal text-[#4b4b4b]">
                                         Confiável
                                     </p>
@@ -56,9 +64,14 @@ export default function Home() {
                                         <Image src={Smiley} alt="" />
                                         <Image src={Smiley} alt="" />
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="flex flex-col justify-between mr-16">
+                                <CardProfile txt="Confiável">
+                                    <Image src={Smiley} alt="" />
+                                    <Image src={Smiley} alt="" />
+                                </CardProfile>
+
+                                {/* <div className="flex flex-col justify-between mr-16">
                                     <p className="text-[16px] font-normal text-[#4b4b4b]">
                                         Legal
                                     </p>
@@ -67,9 +80,15 @@ export default function Home() {
                                         <Image src={Like} alt="" />
                                         <Image src={Like} alt="" />
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="flex flex-col justify-between mr-10">
+                                <CardProfile txt="Legal">
+                                    <Image src={Like} alt="" />
+                                    <Image src={Like} alt="" />
+                                    <Image src={Like} alt="" />
+                                </CardProfile>
+
+                                {/* <div className="flex flex-col justify-between mr-10">
                                     <p className="text-[16px] font-normal text-[#4b4b4b]">
                                         Sexy
                                     </p>
@@ -77,9 +96,12 @@ export default function Home() {
                                         <Image src={Heart} alt="" />
                                         <Image src={Heart} alt="" />
                                     </div>
-                                </div>
+                                </div> */}
 
-                                
+                                <CardProfile txt="Sexy">
+                                    <Image src={Heart} alt="" />
+                                    <Image src={Heart} alt="" />
+                                </CardProfile>
                             </div>
                         </div>
                     </div>
