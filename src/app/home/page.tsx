@@ -10,6 +10,7 @@ import Smiley from '../../../public/img/svg/smiley.svg'
 import Like from '../../../public/img/svg/like.svg'
 import Heart from '../../../public/img/svg/heart.svg'
 import { CardProfile } from "@/src/components/profile/cardProfile";
+import { CardProfileStatus } from "@/src/components/profile/CardProfileStatus";
 
 export default function Home() {
     return (
@@ -35,20 +36,9 @@ export default function Home() {
                                 <Image src={ImgFrase} alt="" />
                             </div>
 
-                            {/* <div className="[346px] h-[46px] flex justify-start"> */}
-                            <div className="[346px] h-[46px] inline-flex">
-                                {/* <div className="flex flex-col justify-between mr-10">
-                                    <p className="text-[16px] font-normal text-[#4b4b4b]">
-                                        Fã
-                                    </p>
-                                    <div className="w-auto max-w-[46px] flex items-center justify-center gap-[6px]">
-                                        <Image src={Stars} alt="" />
-                                        <p className="text-[16px] text-[#4B4B4B] font-normal">
-                                            85
-                                        </p>
-                                    </div>
-                                </div> */}
+                            <CardProfileStatus />
 
+                            <div className="[346px] h-[46px] inline-flex">
                                 <CardProfile txt="Fã">
                                     <Image src={Stars} alt="" />
                                     <p className="text-[16px] text-[#4B4B4B] font-normal">
@@ -56,47 +46,16 @@ export default function Home() {
                                     </p>
                                 </CardProfile>
 
-                                {/* <div className="flex flex-col justify-between mr-10">
-                                    <p className="text-[16px] font-normal text-[#4b4b4b]">
-                                        Confiável
-                                    </p>
-                                    <div className="w-auto max-w-[62px] flex items-center gap-[6px]">
-                                        <Image src={Smiley} alt="" />
-                                        <Image src={Smiley} alt="" />
-                                    </div>
-                                </div> */}
-
                                 <CardProfile txt="Confiável">
                                     <Image src={Smiley} alt="" />
                                     <Image src={Smiley} alt="" />
                                 </CardProfile>
-
-                                {/* <div className="flex flex-col justify-between mr-16">
-                                    <p className="text-[16px] font-normal text-[#4b4b4b]">
-                                        Legal
-                                    </p>
-                                    <div className="w-auto max-w-[76px] flex items-center gap-[6px]">
-                                        <Image src={Like} alt="" />
-                                        <Image src={Like} alt="" />
-                                        <Image src={Like} alt="" />
-                                    </div>
-                                </div> */}
 
                                 <CardProfile txt="Legal">
                                     <Image src={Like} alt="" />
                                     <Image src={Like} alt="" />
                                     <Image src={Like} alt="" />
                                 </CardProfile>
-
-                                {/* <div className="flex flex-col justify-between mr-10">
-                                    <p className="text-[16px] font-normal text-[#4b4b4b]">
-                                        Sexy
-                                    </p>
-                                    <div className="w-auto max-w-[46px] flex items-center gap-[6px]">
-                                        <Image src={Heart} alt="" />
-                                        <Image src={Heart} alt="" />
-                                    </div>
-                                </div> */}
 
                                 <CardProfile txt="Sexy">
                                     <Image src={Heart} alt="" />
