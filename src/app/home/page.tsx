@@ -7,7 +7,8 @@ import { PerfilComponent } from "@/src/components/PerfilComponent";
 import { ContainerUsers } from "@/src/components/ContainerUsers";
 import { ContainerComunity } from "@/src/components/ContainerComunity";
 import { ContentProfile } from "@/src/components/profile/ContentProfile";
-import { pessoaInfor } from "@/src/components/profile/inforPerfil";
+// import { pessoaInfor } from "@/src/components/profile/inforPerfil";
+import pessoaInfor from "@/src/components/profile/inforPerfil.json";
 
 export default function Home() {
     return (
@@ -29,7 +30,7 @@ export default function Home() {
                                     <p key={obj.Chave} className="text-[16px] text-[#B4AEAE] font-normal">
                                             {obj.Chave}
                                             : 
-                                        <span className="text-[16px] text-[#4B4B4B] font-normal">
+                                        <span className="text-[#4B4B4B] ">
                                             {obj.Valor}
                                         </span>
                                     </p>
