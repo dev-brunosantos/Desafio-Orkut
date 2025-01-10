@@ -14,15 +14,12 @@ interface CardProfileProps {
 
 export const CardProfile = ({ txt, children }: CardProfileProps) => {
     return (
-        <div className="flex flex-col justify-between mr-10">
+        <div className="w-[130px] border flex flex-col justify-between mr-[80px] relative">
             <p className="text-[16px] font-normal text-[#4b4b4b]">
                 {txt}
             </p>
-            <div className="w-auto max-w-[46px] flex items-center justify-center gap-[6px]">
+            <div className="w-auto max-w-[46px] flex items-center gap-[6px]">
                 {children}
-                <p className="text-[16px] text-[#4B4B4B] font-normal">
-                    85
-                </p>
             </div>
         </div>
     )
