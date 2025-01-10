@@ -5,8 +5,8 @@ import Link from "next/link"
 import { FaChevronDown } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 
-import Logo from '../../public/img/svg/logo-orkut.svg'
-import LogoPerfil from '../../public/img/users/iuricode 1.png'
+import Logo from '../../../public/img/svg/logo-orkut.svg'
+import LogoPerfil from '../../../public/img/users/iuricode 1.png'
 
 export const MenuPrincipal = () => {
     return (

@@ -12,28 +12,28 @@ export const ContentProfile = () => {
         <div className="w-[544px] h-[184px] flex flex-col gap-10">
             <CardProfileStatus />
 
-            <div className="[346px] h-[46px] inline-flex">
+            <div className="[346px] h-[46px] flex">
                 <CardProfile txt="Fã">
-                    <Image src={Stars} alt="" />
-                    <p className="text-[16px] text-[#4B4B4B] font-normal">
+                    <Image src={Stars} alt="" className="w-[18px] h-[18px]"/>
+                    <p className="text-[14px] text-[#4B4B4B] font-normal">
                         85
                     </p>
                 </CardProfile>
 
                 <CardProfile txt="Confiável">
-                    <Image src={Smiley} alt="" />
-                    <Image src={Smiley} alt="" />
+                    <Image src={Smiley} alt="" className="w-[18px] h-[18px]"/>
+                    <Image src={Smiley} alt="" className="w-[18px] h-[18px]"/>
                 </CardProfile>
 
                 <CardProfile txt="Legal">
-                    <Image src={Like} alt="" />
-                    <Image src={Like} alt="" />
-                    <Image src={Like} alt="" />
+                    <Image src={Like} alt="" className="w-[18px] h-[18px]"/>
+                    <Image src={Like} alt="" className="w-[18px] h-[18px]"/>
+                    <Image src={Like} alt="" className="w-[18px] h-[18px]"/>
                 </CardProfile>
 
                 <CardProfile txt="Sexy">
-                    <Image src={Heart} alt="" />
-                    <Image src={Heart} alt="" />
+                    <Image src={Heart} alt="" className="w-[18px] h-[18px]"/>
+                    <Image src={Heart} alt="" className="w-[18px] h-[18px]"/>
                 </CardProfile>
             </div>
         </div>

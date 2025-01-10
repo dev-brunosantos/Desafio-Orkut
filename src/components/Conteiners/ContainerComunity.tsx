@@ -1,8 +1,8 @@
 "use client"
 
 import { ContainerComponent } from "./ConteinerComponent"
-import { CardImg } from "./CardImg"
-import { comunityImg } from "../tools/comunityInfor"
+import { CardImg } from "../CardImg"
+import { comunityImg } from "../../tools/comunityInfor"
 
 export const ContainerComunity = () => {
     return (

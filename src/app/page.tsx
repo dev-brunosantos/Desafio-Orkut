@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FormComponent } from "../components/FormComponent";
-import { MenuComponent } from "../components/MenuComponent";
+import { MenuComponent } from "../components/Menus/MenuComponent";
 
 import ImgLogin from '../../public/img/users/img_login.png'
 

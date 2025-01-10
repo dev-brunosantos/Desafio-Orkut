@@ -1,7 +1,7 @@
+import Image from "next/image"
 import Link from "next/link"
 
-import Logo from '../../public/img/svg/logo-orkut.svg'
-import Image from "next/image"
+import Logo from '../../../public/img/svg/logo-orkut.svg'
 
 export const MenuComponent = () => {
     return (
