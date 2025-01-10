@@ -1,14 +1,9 @@
-// import Image from "next/image";
-
 import { MenuPrincipal } from "@/src/components/MenuPrincipal";
 import { PerfilComponent } from "@/src/components/PerfilComponent";
-// import { CardProfileStatus } from "@/src/components/profile/CardProfileStatus";
-// import { CardProfile } from "@/src/components/profile/CardProfile";
 import { ContainerUsers } from "@/src/components/ContainerUsers";
 import { ContainerComunity } from "@/src/components/ContainerComunity";
 import { ContentProfile } from "@/src/components/profile/ContentProfile";
-// import { pessoaInfor } from "@/src/components/profile/inforPerfil";
-import pessoaInfor from "@/src/components/profile/inforPerfil.json";
+import { profileInfor } from "@/src/tools/profileInfor";
 
 export default function Home() {
     return (
@@ -26,7 +21,7 @@ export default function Home() {
 
                         <div className="w-[405px] h-[596px] flex flex-col gap-6">
                             {
-                                pessoaInfor.map(obj => (
+                                profileInfor.map(obj => (
                                     <p key={obj.Chave} className="text-[16px] text-[#B4AEAE] font-normal">
                                             {obj.Chave}
                                             : 
