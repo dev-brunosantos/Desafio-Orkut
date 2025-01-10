@@ -8,7 +8,11 @@ import { FiSearch } from "react-icons/fi";
 import Logo from '../../../public/img/svg/logo-orkut.svg'
 import LogoPerfil from '../../../public/img/users/iuricode 1.png'
 
-export const MenuPrincipal = () => {
+interface Props {
+    funcao: () => void
+}
+
+export const MenuPrincipal = ({ funcao }:Props) => {
     return (
         <div className="w-[100%] max-w-[1240px] h-[62px] flex items-center justify-between bg-dark40 m-auto">
             <div className="w-[518px] flex items-center justify-around">
@@ -47,7 +51,7 @@ export const MenuPrincipal = () => {
                         </p>
                     </div>
 
-                    <button className="">
+                    <button className="" onClick={funcao}>
                         <FaChevronDown size={15} color="#ed2590 " />
                     </button>
                 </div>
