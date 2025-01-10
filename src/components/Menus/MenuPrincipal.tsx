@@ -17,12 +17,13 @@ interface Props {
 export const MenuPrincipal = ({ children, funcao }: Props) => {
     return (
         <div className="w-[100%] max-w-[1240px] h-[62px] flex items-center justify-between bg-dark40 m-auto">
-            <div className="w-[518px] flex items-center justify-around">
+            <div className="w-[518px] flex items-center justify-between pl-11">
                 <div>
-                    <Image src={Logo} alt="" />
+                    <Image src={Logo} alt="" className="w-[60px] h-[18px]"/>
                 </div>
 
-                <nav className="w-[410px] flex items-center justify-evenly">
+                {/* <nav className="w-[410px] flex items-center justify-evenly"> */}
+                <nav className="hidden">
                     <Link href='' className="text-[16px] font-medium ">Inicio</Link>
                     <Link href='' className="text-[16px] font-medium text-brandColor">Perfil</Link>
                     <Link href='' className="text-[16px] font-medium">Comunidades</Link>
@@ -31,7 +32,8 @@ export const MenuPrincipal = ({ children, funcao }: Props) => {
             </div>
 
             <div className="w-[560px]  flex gap-12">
-                <div className="w-[355px] h-9 rounded-lg overflow-hidden flex items-center gap-3 relative bg-dark30">
+                {/* <div className="w-[355px] h-9 rounded-lg overflow-hidden flex items-center gap-3 relative bg-dark30"> */}
+                <div className="hidden">
 
                     <FiSearch size={20} color="#B4AEAE"
                         className="absolute left-2"
@@ -45,7 +47,7 @@ export const MenuPrincipal = ({ children, funcao }: Props) => {
                 </div>
 
                 <div className="w-[157px] h-9 flex items-center gap-[14px]">
-                    <Image src={LogoPerfil} alt="" className="h-[90%]" />
+                    <Image src={LogoPerfil} alt="" className="h-[75%]" />
 
                     <div className="flex">
                         <p className="w-24 h-[100%] text-[14px] ">

@@ -12,6 +12,7 @@ export const BtnComponent = ({ titulo, btnPadrao, btnBranco }: BtnProps) => {
 
     if (btnPadrao) {
         return (
+            // <div className="w-[336px] h-[52px] my-2 rounded-lg gap-2 relative flex items-center justify-center bg-brandColor overflow-hidden" >
             <div className="w-[336px] h-[52px] my-2 rounded-lg gap-2 relative flex items-center justify-center bg-brandColor overflow-hidden" >
                 <Link href='home' className="w-[100%] h-[100%] bg-transparent px-4 text-[16px] text-dark40 font-semibold flex items-center justify-center " >
                     {titulo}
@@ -22,7 +23,8 @@ export const BtnComponent = ({ titulo, btnPadrao, btnBranco }: BtnProps) => {
 
     if (btnBranco) {
         return (
-            <div className="w-[100%] h-[52px] my-2 rounded-lg gap-2 flex items-center justify-center bg-dark40 overflow-hidden relative">
+            // <div className="w-[100%] h-[52px] my-2 rounded-lg gap-2 flex items-center justify-center bg-dark40 overflow-hidden relative">
+            <div className="w-[207px] h-[52px] my-2 rounded-[999px] gap-2 flex items-center justify-center bg-dark40 overflow-hidden relative">
                 <Link href='home' className="w-[100%] h-[100%] bg-transparent px-4 text-[16px] text-brandColor font-semibold flex items-center justify-center " >
                     {titulo}
                 </Link>
@@ -31,6 +33,7 @@ export const BtnComponent = ({ titulo, btnPadrao, btnBranco }: BtnProps) => {
     }
 
     return (
+        // {/* <div className="w-[336px] h-[52px] my-2 rounded-lg gap-2 relative flex items-center justify-center bg-dark30 overflow-hidden"> */}
         <div className="w-[336px] h-[52px] my-2 rounded-lg gap-2 relative flex items-center justify-center bg-dark30 overflow-hidden">
             <Link href='home' className="w-[100%] h-[100%] bg-transparent px-4 text-[16px] text-brandColor font-semibold flex items-center justify-center " >
                 {titulo}

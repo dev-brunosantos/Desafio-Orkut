@@ -26,7 +26,7 @@ export default function Home() {
 
     return (
         <div>
-            <header className="w-[100%] flex items-center justify-center bg-dark40 relative">
+            <header className="w-[100%] flex items-center justify-center bg-dark40 fixed top-0 left-0 z-[999]">
                 <MenuPrincipal funcao={menu}>
                     {
                         abrir === 'fechar-menu' ?
@@ -35,7 +35,7 @@ export default function Home() {
                     }
                 </MenuPrincipal>
 
-                <div className="w-[177px] h-auto flex items-center gap-[14px] absolute right-0 top-[97%] ">
+                <div className="w-[177px] h-auto flex items-center gap-[14px] absolute right-0 top-[97%] z-[999]">
                     {/* <div className="fechar-menu"> */}
                     {/* <nav className="w-[410px] h-[200px] bg-dark40 flex flex-col items-start justify-evenly px-4 rounded-md"> */}
                     {/* <nav className="w-[410px] h-[100%] bg-dark40 flex flex-col items-start justify-evenly px-4 rounded-md"> */}
@@ -49,53 +49,81 @@ export default function Home() {
                 </div>
             </header>
 
-            <main className="flex items-center justify-center pt-[6%] pb-[3%]">
-                <div className="w-[100%] max-w-[1240px] min-h-auto flex  gap-8">
+            <main className="flex items-center justify-center pb-[3%] pt-[25%]">
+                {/* <div className="w-[100%] max-w-[1240px] min-h-auto flex  gap-8"> */}
+                <div className="w-full flex flex-col">
                     <PerfilComponent />
 
-                    <div className="w-[592px] h-[868px] py-8 px-6 flex flex-col items-start rounded-2xl gap-6 bg-dark40 ">
-                        <ContentProfile />
+                    {/* <div className="w-[592px] h-[868px] py-8 px-6 flex flex-col items-start rounded-2xl gap-6 bg-dark40 "> */}
+                    <div className="w-full h-[868px] py-8 px-6 flex flex-col items-center rounded-2xl gap-6 bg-transparent ">
 
-                        <div className="w-[80%] max-h-auto min-h-[596px] flex flex-col gap-6 ">
-                            {
-                                profileInfor.map(obj => (
-                                    <p key={obj.Chave} className="text-[14px] text-dark20 font-normal">
-                                        {obj.Chave}
-                                        :
-                                        <span className="text-dark10 ">
-                                            {obj.Valor}
-                                        </span>
-                                    </p>
-                                ))
-                            }
+                        <div className="w-auto h-[815px] flex flex-col gap-8">
+                            <ContainerUsers />
+                        </div>
 
-                            <ContainerMusicsAndMovies category="Musicas">
+                        <div className="w-[327px] min-h-auto rounded-2xl flex flex-col items-center bg-dark40 py-10">
+                            <ContentProfile />
+
+                            {/* <div className="w-[80%] max-h-auto min-h-[596px] flex flex-col gap-6 "> */}
+                            <div className="w-[80%] h-[596px] flex flex-col gap-6 mt-6">
                                 {
-                                    musics.map(item => (
-                                        <span key={item.music} className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
-                                            {item.music}
-                                        </span>
+                                    profileInfor.map(obj => (
+                                        <p key={obj.Chave} className="text-[14px] text-dark20 font-normal">
+                                            {obj.Chave}
+                                            :
+                                            <span className="text-dark10 ">
+                                                {obj.Valor}
+                                            </span>
+                                        </p>
                                     ))
                                 }
-                            </ContainerMusicsAndMovies>
 
-                            <ContainerMusicsAndMovies category="Musicas">
-                                {
-                                    movies.map(item => (
-                                        <span key={item.movie} className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
-                                            {item.movie}
-                                        </span>
-                                    ))
-                                }
-                            </ContainerMusicsAndMovies>
+                                <ContainerMusicsAndMovies category="Musicas" isMobile={true}>
+                                    <span className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
+                                        {musics[0].music}
+                                    </span>
+                                </ContainerMusicsAndMovies>
+
+                                <ContainerMusicsAndMovies category="Musicas" isMobile={true}>
+                                    <span className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
+                                        {movies[0].movie}
+                                    </span>
+                                </ContainerMusicsAndMovies>
+
+                                <ContainerMusicsAndMovies category="Musicas" isMobile={false}>
+                                    {
+                                        musics.map(item => (
+                                            <span key={item.music} className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
+                                                {item.music}
+                                            </span>
+                                        ))
+                                    }
+                                </ContainerMusicsAndMovies>
+
+                                <ContainerMusicsAndMovies category="Musicas">
+                                    {
+                                        movies.map(item => (
+                                            <span key={item.movie} className="text-dark10 border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
+                                                {item.movie}
+                                            </span>
+                                        ))
+                                    }
+                                </ContainerMusicsAndMovies>
+                            </div>
+                        </div>
+
+                        <div className="w-auto h-[815px] flex flex-col gap-8">
+                            <ContainerComunity />
                         </div>
                     </div>
 
-                    <div className="w-auto h-[815px] flex flex-col gap-8">
+
+
+                    {/* <div className="w-auto h-[815px] flex flex-col gap-8">
                         <ContainerUsers />
 
                         <ContainerComunity />
-                    </div>
+                    </div> */}
                 </div>
             </main>
         </div>

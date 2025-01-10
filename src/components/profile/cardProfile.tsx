@@ -7,7 +7,8 @@ interface CardProfileProps {
 
 export const CardProfile = ({ txt, children }: CardProfileProps) => {
     return (
-        <div className="flex flex-col justify-between items-start mr-[40px] relative">
+        // <div className="flex flex-col justify-between items-start mr-[40px] relative">
+        <div className="flex flex-col justify-between items-start mr-[32px] relative">
             <p className="text-[14px] font-normal text-dark10">
                 {txt}
             </p>
