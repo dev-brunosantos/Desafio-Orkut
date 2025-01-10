@@ -5,7 +5,7 @@ import { BtnComponent } from "../BtnComponent"
 
 export const PerfilComponent = () => {
     return (
-        <div className="w-auto h-[400px] flex flex-col items-center justify-evenly relative">
+        <div className="w-auto h-[400px] flex flex-col items-center relative ">
             <div className="w-[280px] h-[312px] rounded-2xl flex flex-col items-center justify-evenly gap-6 bg-dark40">
                 <div className="w-[184px] h-[184px] flex items-center justify-center">
                     <Image src={Perfil} alt="" className="w-[100%] h-[100%]" />

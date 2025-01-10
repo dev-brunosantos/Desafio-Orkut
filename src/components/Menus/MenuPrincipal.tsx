@@ -2,17 +2,19 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { FaChevronDown } from "react-icons/fa";
+// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 
 import Logo from '../../../public/img/svg/logo-orkut.svg'
 import LogoPerfil from '../../../public/img/users/iuricode 1.png'
+import { ReactNode } from "react";
 
 interface Props {
-    funcao: () => void
+    children: ReactNode;
+    funcao: () => void;
 }
 
-export const MenuPrincipal = ({ funcao }:Props) => {
+export const MenuPrincipal = ({ children, funcao }: Props) => {
     return (
         <div className="w-[100%] max-w-[1240px] h-[62px] flex items-center justify-between bg-dark40 m-auto">
             <div className="w-[518px] flex items-center justify-around">
@@ -52,7 +54,8 @@ export const MenuPrincipal = ({ funcao }:Props) => {
                     </div>
 
                     <button className="" onClick={funcao}>
-                        <FaChevronDown size={15} color="#ed2590 " />
+                        {children}
+                        {/* <FaChevronDown size={15} color="#ed2590 " /> */}
                     </button>
                 </div>
             </div>

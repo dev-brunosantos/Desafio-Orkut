@@ -11,6 +11,8 @@ import { PerfilComponent } from "@/src/components/profile/PerfilComponent";
 import Link from "next/link";
 import { useState } from "react";
 
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+
 export default function Home() {
 
     const [abrir, setAbrir] = useState('fechar-menu')
@@ -18,25 +20,31 @@ export default function Home() {
     function menu() {
         // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         abrir === 'fechar-menu' ?
-            setAbrir('abrir-menu'):
+            setAbrir('abrir-menu') :
             setAbrir('fechar-menu')
     }
 
     return (
         <div>
             <header className="w-[100%] flex items-center justify-center bg-dark40 relative">
-                <MenuPrincipal funcao={menu}/>
+                <MenuPrincipal funcao={menu}>
+                    {
+                        abrir === 'fechar-menu' ?
+                            <FaChevronDown size={15} color="#ed2590 " /> :
+                            <FaChevronUp size={15} color="#ed2590 " />
+                    }
+                </MenuPrincipal>
 
                 <div className="w-[177px] h-auto flex items-center gap-[14px] absolute right-0 top-[97%] ">
-                {/* <div className="fechar-menu"> */}
+                    {/* <div className="fechar-menu"> */}
                     {/* <nav className="w-[410px] h-[200px] bg-dark40 flex flex-col items-start justify-evenly px-4 rounded-md"> */}
                     {/* <nav className="w-[410px] h-[100%] bg-dark40 flex flex-col items-start justify-evenly px-4 rounded-md"> */}
                     <nav className={abrir}>
-                        <Link href='' className="text-[16px] font-medium ">Inicio</Link>
-                        <Link href='' className="text-[16px] font-medium text-brandColor">Perfil</Link>
-                        <Link href='' className="text-[16px] font-medium">Comunidades</Link>
-                        <Link href='' className="text-[16px] font-medium ">Jogos</Link>
-                        <Link href='' className="text-[16px] font-medium ">Sair</Link>
+                        <Link href='' className="text-[14px] font-medium ">Inicio</Link>
+                        <Link href='' className="text-[14px] font-medium ">Perfil</Link>
+                        <Link href='' className="text-[14px] font-medium">Comunidades</Link>
+                        <Link href='' className="text-[14px] font-medium ">Jogos</Link>
+                        <Link href='/' className="text-[14px] font-medium ">Sair</Link>
                     </nav>
                 </div>
             </header>
