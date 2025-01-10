@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 import Perfil from '../../public/img/users/user-image.png'
-import { BtnComponent } from "./BtnComponent"
+import { BtnComponent } from "../BtnComponent"
 
 export const PerfilComponent = () => {
     return (

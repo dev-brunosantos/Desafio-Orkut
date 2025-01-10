@@ -1,5 +1,5 @@
 import { MenuPrincipal } from "@/src/components/Menus/MenuPrincipal";
-import { PerfilComponent } from "@/src/components/PerfilComponent";
+import { PerfilComponent } from "@/src/components/profile/PerfilComponent";
 import { ContainerUsers } from "@/src/components/Conteiners/ContainerUsers";
 import { ContainerComunity } from "@/src/components/Conteiners/ContainerComunity";
 import { ContentProfile } from "@/src/components/profile/ContentProfile";
@@ -14,7 +14,7 @@ export default function Home() {
                 <MenuPrincipal />
             </header>
 
-            <main className="flex items-center justify-center">
+            <main className="flex items-center justify-center pt-[6%] pb-[3%]">
                 <div className="w-[100%] max-w-[1240px] min-h-auto flex  gap-8">
                     <PerfilComponent />
 
@@ -37,7 +37,7 @@ export default function Home() {
                             <ContainerMusicsAndMovies category="Musicas">
                                 {
                                     musics.map(item => (
-                                        <span key={item.music} className="text-[#4B4B4B] border border-brandColor rounded-[30px] py-0.5 px-4 mr-[13px]">
+                                        <span key={item.music} className="text-[#4B4B4B] border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
                                             {item.music}
                                         </span>
                                     ))
@@ -47,7 +47,7 @@ export default function Home() {
                             <ContainerMusicsAndMovies category="Musicas">
                                 {
                                     movies.map(item => (
-                                        <span key={item.movie} className="text-[#4B4B4B] border border-brandColor rounded-[30px] py-0.5 px-4 mr-[13px]">
+                                        <span key={item.movie} className="text-[#4B4B4B] border border-brandColor rounded-[30px] py-0.5 px-4 ml-[4.5px] mr-[8.5px]">
                                             {item.movie}
                                         </span>
                                     ))
