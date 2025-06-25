@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💬 Desafio Orkut
 
-## Getting Started
+## 🧠 Sobre o projeto
 
-First, run the development server:
+O **Desafio Orkut** tem como objetivo recriar duas telas clássicas da antiga rede social **Orkut**:
+
+1. **Tela de login**
+2. **Tela de perfil do usuário**
+
+A proposta é trazer de volta a estética nostálgica do Orkut utilizando tecnologias modernas como **Next.js**, **React** e **Tailwind CSS**.
+
+Este projeto serve como exercício prático de **desenvolvimento front-end**, focando em:
+- Componentização com React
+- Estilização responsiva com Tailwind CSS
+- Navegação de páginas com Next.js
+
+Apesar de não conter funcionalidades completas de back-end, o projeto simula interações visuais semelhantes à experiência original da plataforma.
+
+
+## 🚀 Tecnologias utilizadas
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+## 📥 Clonando o repositório
+
+Clone o projeto para a sua máquina local usando o comando abaixo:
+
+```bash
+git clone https://github.com/seu-usuario/desafio-orkut.git
+```
+
+<br/>
+
+## Instalação das dependências
+
+```bash
+git clone https://github.com/seu-usuario/desafio-orkut.git
+```
+
+```bash
+npm install
+```
+ 
+
+<br/>
+
+## Executando o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto será executado em:
+🔗 http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<br/>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
