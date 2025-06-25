@@ -50,10 +50,15 @@ export default function Home() {
             </header>
 
             <main className="flex items-center justify-center pt-[6%] pb-[3%]">
-                <div className="w-[100%] max-w-[1240px] min-h-auto flex  gap-8">
+                <div className="
+                    sm:w-[100%] sm:max-w-[1240px] sm:min-h-auto sm:flex sm:flex-col sm:items-center sm:gap-8
+                    lg:w-[100%] lg:max-w-[1240px] lg:min-h-auto lg:flex lg:flex-row lg:items-start lg:gap-8
+                ">
                     <PerfilComponent />
 
-                    <div className="w-[592px] h-[868px] py-8 px-6 flex flex-col items-start rounded-2xl gap-6 bg-dark40 ">
+                    <div className="
+                        md:w-[592px] md:h-[868px] md:py-8 md:px-6 md:flex md:flex-col md:items-start md:rounded-2xl md:gap-6 bg-dark40 
+                    ">
                         <ContentProfile />
 
                         <div className="w-[80%] max-h-auto min-h-[596px] flex flex-col gap-6 ">
@@ -91,7 +96,10 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="w-auto h-[815px] flex flex-col gap-8">
+                    <div className="
+                        sm:flex sm:flex-row sm:items-center sm:justify-evenly sm:w-[90%] sm:min-h-auto sm:gap-6
+                        lg:w-auto lg:h-[815px] lg:flex lg:flex-col lg:justify-evenly lg:gap-8       
+                    ">
                         <ContainerUsers />
 
                         <ContainerComunity />

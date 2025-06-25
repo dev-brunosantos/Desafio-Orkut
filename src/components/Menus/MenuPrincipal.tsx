@@ -22,7 +22,7 @@ export const MenuPrincipal = ({ children, funcao }: Props) => {
                     <Image src={Logo} alt="" />
                 </div>
 
-                <nav className="w-[410px] flex items-center justify-evenly">
+                <nav className="hidden w-[410px] md:flex items-center justify-evenly">
                     <Link href='' className="text-[16px] font-medium ">Inicio</Link>
                     <Link href='' className="text-[16px] font-medium text-brandColor">Perfil</Link>
                     <Link href='' className="text-[16px] font-medium">Comunidades</Link>
@@ -30,8 +30,8 @@ export const MenuPrincipal = ({ children, funcao }: Props) => {
                 </nav>
             </div>
 
-            <div className="w-[560px]  flex gap-12">
-                <div className="w-[355px] h-9 rounded-lg overflow-hidden flex items-center gap-3 relative bg-dark30">
+            <div className="w-auto mr-3 flex gap-12 lg:w-[560px]">
+                <div className="w-[355px] h-9 rounded-lg overflow-hidden hidden items-center gap-3 relative bg-dark30 lg:flex">
 
                     <FiSearch size={20} color="#B4AEAE"
                         className="absolute left-2"
@@ -51,12 +51,12 @@ export const MenuPrincipal = ({ children, funcao }: Props) => {
                         <p className="w-24 h-[100%] text-[14px] ">
                             Bruno Santos
                         </p>
+                        <button className="" onClick={funcao}>
+                            {children}
+                            {/* <FaChevronDown size={15} color="#ed2590 " /> */}
+                        </button>
                     </div>
 
-                    <button className="" onClick={funcao}>
-                        {children}
-                        {/* <FaChevronDown size={15} color="#ed2590 " /> */}
-                    </button>
                 </div>
             </div>
         </div>

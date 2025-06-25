@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CardProfile } from "./CardProfile"
+import { CardProfile } from "./cardProfile"
 import { CardProfileStatus } from "./CardProfileStatus"
 
 import Stars from '../../../public/img/svg/star.svg'

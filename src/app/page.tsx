@@ -15,7 +15,7 @@ export default function App() {
 
       <main className="w-[100%] h-[100vh] flex items-center justify-center ">
         <div className="w-auto h-[75%] gap-8 flex items-center justify-center">
-          <Image src={ImgLogin} alt="" className="max-w-[700px] h-[100%] max-h-[598px]" />
+          <Image src={ImgLogin} alt="" className="max-w-[700px] h-[100%] max-h-[598px] hidden lg:flex" />
           <FormComponent />
         </div>
       </main>
